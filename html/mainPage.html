@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/mainPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="info-game-con">
+        <span id="name-id">Name : </span>
+        <span id="time-id">Time : 00:00</span>
+        <div class="lives">
+  
+</div>
+<select id="helpers">
+       <option value=""> Helpers </option>
+        <option value="50/50">50/50</option>
+        <option value="skip">Skip Question</option>
+        <option value="-10s">-10s</option>
+      </select>
+        <button id="btn-restartID">Restart</button>
+        <button id="btn-homeID">Home</button>
+    </div>
+    <div class="answare-con">
+      <div class="question-con">
+        <p class="typewriter" id="question-id"></p>
+      </div>
+      <div class="btns-con">
+        <button class="btn-result">...</button>
+        <button class="btn-result">...</button>
+        <button class="btn-result">...</button>
+        <button class="btn-result">...</button>
+      </div>
+       <div class="next-ques"><button id="btn-next">Next</button></div>
+      <div class="ProgressNextQues"><div class="progress"></div></div>
+    </div>
+    <script type="module" src="../js/ui_mainPage.js" defer></script>
+  </body>
+</html>

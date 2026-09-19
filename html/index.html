@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/startPage.css" />
+    <title>Quiz Game</title>
+  </head>
+  <body>
+    <div class="loading">
+      <div
+        aria-label="Orange and tan hamster running in a metal wheel"
+        role="img"
+        class="wheel-and-hamster"
+      >
+        <div class="wheel"></div>
+        <div class="hamster">
+          <div class="hamster__body">
+            <div class="hamster__head">
+              <div class="hamster__ear"></div>
+              <div class="hamster__eye"></div>
+              <div class="hamster__nose"></div>
+            </div>
+            <div class="hamster__limb hamster__limb--fr"></div>
+            <div class="hamster__limb hamster__limb--fl"></div>
+            <div class="hamster__limb hamster__limb--br"></div>
+            <div class="hamster__limb hamster__limb--bl"></div>
+            <div class="hamster__tail"></div>
+          </div>
+        </div>
+        <div class="spoke"></div>
+      </div>
+      <div>
+        <p class="typewriter">Think fast,Choose wisely . . .</p>
+      </div>
+    </div>
+
+    <div id="game-form" class="game-form">
+      <h1>QUIZORA</h1>
+      <label for="name">Player Name</label>
+      <input
+        type="text"
+        name="name"
+        placeholder="Enter your name"
+        id="input-name"
+      />
+      <h2>Difficulty Level</h2>
+      <select id="dl-id">
+        <option value="easy" selected>Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <h2>What do you want the questions to be about?</h2>
+      <select id="category-id">
+        <option value="Animals" selected>Animals</option>
+        <option value="Books">Books</option>
+        <option value="Music">Music</option>
+        <option value="Film">Film</option>
+        <option value="Entertainment: Video Games">Video Games</option>
+        <option value="Science: Computers">Computers</option>
+        <option value="History">History</option>
+        <option value="Sports">Sports</option>
+        <option value="Vehicles">Vehicles</option>
+        <option value="Geography">Geography</option>
+      </select>
+
+      <button id="btn-startGame">Start Game</button>
+    </div>
+    <script type="module" src="../js/ui_startPage.js" defer></script>
+  </body>
+</html>
