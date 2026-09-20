@@ -21,7 +21,7 @@ function startGame() {
     setname();
     setDL();
     setcategory();
-    location.href = "mainPage.html";
+    location.href = "./html/mainPage.html";
   });
 }
 startGame();
